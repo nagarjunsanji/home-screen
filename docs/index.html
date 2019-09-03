@@ -1,47 +1,15 @@
-<!DOCTYPE html public "display of affection from creativejs">
+<!DOCTYPE html>
+<html>
   <head>
     <base href="https://nagarjunsanji.github.io/home-screen/">
-    <meta charset="uft-8" />
-    <meta name="theme-color" content="#536878" />
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <title>Fireworks!</title>
-    <link href="css/fireworks.css" rel="stylesheet">
-    <link rel="manifest" href="manifest.json">
+    <meta charset="utf-8">
+    <title>A2HS demo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
-  <!--
-  I love including these comments in pages. It pleases me that
-  you're reading them as well. It's like we're having a moment.
-  We are. Anyway, the CreativeJS team though Fireworks would
-  be teh r0xx0rz and I volunteered to give this a shot. So
-  I hope you're enjoying them and doing the "Aaah! Oooh!"
-  thing. If not I'm a bit upset, but I'll let it slide.
-
-  Also, big shoutz to Paul Irish for the rAF shimidimmydoo.
-
-  Paul | aerotwist
-  -->
   <body>
-
-    <!-- Hiding library elements in the DOM is fun -->
-    <aside id="library">
-      <img src="images/nightsky.png" id="nightsky" />
-      <img src="images/big-glow.png" id="big-glow" />
-      <img src="images/small-glow.png" id="small-glow" />
-    </aside>
-    <main id="welcome-back" class="isPaused">
-      <h1>Welcome back!</h1>
-    </main>
+    <img src="images/fox1.jpg" alt="a fox picture">
+    <button class="add-button" st>Add to home screen</button>
   </body>
-  <script src="js/requestanimframe.js"></script>
-  <script src="js/fireworks.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      console.log("Will service worker register?");
-      navigator.serviceWorker.register('service-worker.js').then(function(reg){
-        console.log("Yes it did.");
-      }).catch(function(err) {
-        console.log("No it didn't. This happened: ", err)
-      });
-    }
-  </script>
 </html>
